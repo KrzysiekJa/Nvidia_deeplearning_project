@@ -14,7 +14,7 @@ def deploy (img_path): # importing image path
     MODEL_JOB_DIR = '/dli/data/digits/20190209-212443-4712'
     ARCHITECTURE  = MODEL_JOB_DIR + '/' + 'deploy.prototxt'
     WEIGHTS       = MODEL_JOB_DIR + '/' + 'snapshot_iter_540.caffemodel'
-    DATA_JOB_DIR = '/dli/data/digits/20190209-211204-1317'
+    DATA_JOB_DIR  = '/dli/data/digits/20190209-211204-1317'
     
     # initializing the Caffe model using the model trained in DIGITS
     net = caffe.Classifier(ARCHITECTURE, WEIGHTS,
